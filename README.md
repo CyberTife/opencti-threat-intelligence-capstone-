@@ -105,11 +105,9 @@ The indicator was used to demonstrate the OpenCTI enrichment workflow.
 
 ### Evidence
 
-![Indicator Analysis](threat-intelligence/opencti-indicator-156-229-165-166.png)
+![Indicator Analysis](threat-intelligence/opencti-enrichment-indicator.png)
 
-**Figure 4 —** OpenCTI indicator analysis for 156.229.165.166 showing its source, confidence score, TLP marking, and associated labels.
-
-> **Upload this image as:** `threat-intelligence/opencti-indicator-156-229-165-166.png`
+**Figure 4 —** OpenCTI indicator analysis for 156.229.165.166 showing its threat-intelligence source, confidence score, TLP marking, and associated labels.
 
 ---
 
@@ -153,7 +151,7 @@ The enrichment script successfully queried OpenCTI for `156.229.165.166`, found 
 
 **Figure 5 —** Wazuh CDB list and configuration used for the OpenCTI indicator-matching path.
 
-The indicator used for the controlled enrichment test is shown in the [indicator analysis evidence](threat-intelligence/opencti-indicator-156-229-165-166.png).
+The indicator used for the controlled enrichment test is shown in the [indicator analysis evidence](threat-intelligence/opencti-enrichment-indicator.png).
 
 *Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log. The detailed output is also documented in the final report.*
 
@@ -222,7 +220,7 @@ The original Sysmon event already contained the parent-process information. The 
 
 ### Evidence
 
-![Improved Rule 100600](detection-engineering/improved-rule-100600-dashboard.png)
+![Improved Rule 100600](detection-engineering/improved-rule-100600.png)
 
 **Figure 6 —** Improved Wazuh detection: Rule 100600 generated a Level 12 alert with PowerShell parent-process context.
 
@@ -330,7 +328,7 @@ The project presentation is stored in the repository:
 
 ## Evidence Screenshots
 
-The repository is organised by topic so each screenshot has a clear purpose. The uploaded images are shown directly in the relevant sections above; remaining evidence can be added using the filenames shown below.
+The repository is organised by topic so each screenshot has a clear purpose. The uploaded images are shown directly in the relevant sections above. The repository also contains the full PDF report and PowerPoint presentation.
 
 Store project evidence in the topic folders:
 
@@ -368,9 +366,7 @@ opencti-threat-intelligence-capstone-/
 │
 ├── detection-engineering/
 │   ├── baseline-rule-100400.png
-│   ├── baseline-rule-100400-event.png
-│   ├── improved-rule-100600-dashboard.png
-│   ├── improved-rule-100600-event.png
+│   ├── improved-rule-100600.png
 │   └── before-after-detection.png
 │
 ├── report/
