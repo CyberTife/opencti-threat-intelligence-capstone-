@@ -80,7 +80,7 @@ At the time of the project screenshots, OpenCTI contained a populated set of thr
 
 ![OpenCTI Feed Integrations](threat-intelligence/opencti-feed-integrations.png)
 
-*OpenCTI integrations showing the connected threat-intelligence sources and MITRE ATT&CK.*
+**Figure 3 —** OpenCTI integrations showing the connected threat-intelligence sources and MITRE ATT&CK.
 
 ---
 
@@ -107,7 +107,9 @@ The indicator was used to demonstrate the OpenCTI enrichment workflow.
 
 ![Indicator Analysis](threat-intelligence/opencti-indicator-156-229-165-166.png)
 
-*OpenCTI indicator analysis for 156.229.165.166 showing its source, confidence score, TLP marking, and associated labels.*
+**Figure 4 —** OpenCTI indicator analysis for 156.229.165.166 showing its source, confidence score, TLP marking, and associated labels.
+
+> **Upload this image as:** `threat-intelligence/opencti-indicator-156-229-165-166.png`
 
 ---
 
@@ -132,7 +134,7 @@ When a Wazuh alert is sent for enrichment:
 ```
 Wazuh Alert
     ↓
-wazuh-integrator
+wazuh-integratord
     ↓
 Custom Python Enrichment Script
     ↓
@@ -186,13 +188,11 @@ The rule generated a **Level 8** alert during controlled testing.
 
 ### Evidence
 
-![Baseline Rule 100400](detection-engineering/baseline-rule-100400-dashboard.png)
+![Baseline Rule 100400](detection-engineering/baseline-rule-100400.png)
 
-*Baseline Wazuh detection: Rule 100400 generated a Level 8 alert for scheduled-task creation.*
+**Figure 5 —** Baseline Wazuh detection: Rule 100400 generated a Level 8 alert for scheduled-task creation.
 
-![Baseline Rule 100400 Event](detection-engineering/baseline-rule-100400-event.png)
-
-*Event view showing the baseline Rule 100400 alert.*
+**Detailed event evidence:** Upload the event screenshot as `detection-engineering/baseline-rule-100400-event.png`.
 
 ---
 
@@ -225,11 +225,11 @@ The original Sysmon event already contained the parent-process information. The 
 
 ![Improved Rule 100600](detection-engineering/improved-rule-100600-dashboard.png)
 
-*Improved Wazuh detection: Rule 100600 generated a Level 12 alert with PowerShell parent-process context.*
+**Figure 6 —** Improved Wazuh detection: Rule 100600 generated a Level 12 alert with PowerShell parent-process context.
 
-![Improved Rule 100600 Event](detection-engineering/improved-rule-100600-event.png)
+> **Upload this image as:** `detection-engineering/improved-rule-100600-dashboard.png`
 
-*Event view showing the improved Rule 100600 alert.*
+**Detailed event evidence:** Upload the event screenshot as `detection-engineering/improved-rule-100600-event.png`.
 
 ---
 
@@ -247,7 +247,9 @@ The original Sysmon event already contained the parent-process information. The 
 
 ![Before and After Detection](detection-engineering/before-after-detection.png)
 
-*Side-by-side comparison of the baseline and improved Wazuh detections.*
+**Figure 7 —** Side-by-side comparison of the baseline and improved Wazuh detections.
+
+> **Upload this image as:** `detection-engineering/before-after-detection.png`
 
 > **The main improvement was adding process context rather than treating every scheduled-task creation as equally suspicious.**
 
@@ -317,19 +319,19 @@ The live custom IOC alerting path did not consistently generate the expected Waz
 
 ## Final Report
 
-Add the final PDF here:
+The final project report is stored in the repository:
 
 `report/Threat_Intelligence_Integration_OpenCTI_Report.pdf`
 
 ## Presentation
 
-Add the final PowerPoint here:
+The project presentation is stored in the repository:
 
-`presentation/OpenCTI_Threat_Intelligence_Capstone_Presentation.pptx`
+`presentation/OpenCTI_Threat_Intelligence_Presentation.pptx`
 
-## Screenshots
+## Evidence Screenshots
 
-The repository is organised by topic so each screenshot has a clear purpose. Use the exact filenames below when uploading the prepared images.
+The repository is organised by topic so each screenshot has a clear purpose. The uploaded images are shown directly in the relevant sections above; remaining evidence can be added using the filenames shown below.
 
 Store project evidence in the topic folders:
 
@@ -366,7 +368,7 @@ opencti-threat-intelligence-capstone-/
 │   └── (enrichment result documented in report)
 │
 ├── detection-engineering/
-│   ├── baseline-rule-100400-dashboard.png
+│   ├── baseline-rule-100400.png
 │   ├── baseline-rule-100400-event.png
 │   ├── improved-rule-100600-dashboard.png
 │   ├── improved-rule-100600-event.png
@@ -376,7 +378,7 @@ opencti-threat-intelligence-capstone-/
 │   └── Threat_Intelligence_Integration_OpenCTI_Report.pdf
 │
 └── presentation/
-    └── OpenCTI_Threat_Intelligence_Capstone_Presentation.pptx
+    └── OpenCTI_Threat_Intelligence_Presentation.pptx
 ```
 
 ---
