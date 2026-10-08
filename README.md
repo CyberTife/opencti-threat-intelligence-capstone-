@@ -6,7 +6,7 @@ A hands-on SOC Analyst capstone project that integrates **OpenCTI threat intelli
 
 The project was built around an existing Wazuh SOC lab with a Windows endpoint monitored by **Wazuh Agent and Sysmon**.
 
-The work was completed in four main areas:
+The project was completed in four main areas:
 
 1. **OpenCTI deployment** — deployed OpenCTI as the central threat-intelligence platform.
 2. **Threat intelligence ingestion** — connected external sources including ThreatFox, AlienVault OTX, and MITRE ATT&CK.
@@ -147,7 +147,12 @@ The enrichment script successfully queried OpenCTI for `156.229.165.166`, found 
 
 ### Evidence
 
-The enrichment result is documented in the project report. The OpenCTI indicator used for the controlled test is shown in the [indicator analysis evidence](../threat-intelligence/opencti-indicator-156-229-165-166.png).
+Upload the enrichment evidence to the `enrichment/` folder:
+
+- `enrichment-workflow.png` — workflow showing the controlled OpenCTI → Wazuh enrichment process.
+- `enrichment-result.png` — result showing the returned threat-intelligence context.
+
+The indicator used for the controlled test is shown in the [indicator analysis evidence](threat-intelligence/opencti-indicator-156-229-165-166.png).
 
 *Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log.*
 
@@ -324,9 +329,9 @@ Add the final PowerPoint here:
 
 ## Screenshots
 
-The repository is organised so each screenshot has a clear purpose. Use the exact filenames below when uploading the prepared images.
+The repository is organised by topic so each screenshot has a clear purpose. Use the exact filenames below when uploading the prepared images.
 
-Store project evidence in the phase folders:
+Store project evidence in the topic folders:
 
 ```
 architecture/
@@ -376,6 +381,19 @@ opencti-threat-intelligence-capstone-/
 
 ---
 
+# Skills Demonstrated
+
+- Threat intelligence ingestion and indicator analysis
+- OpenCTI platform administration
+- Wazuh SIEM integration and enrichment
+- IOC management using a Wazuh CDB list
+- MITRE ATT&CK mapping
+- Windows/Sysmon telemetry analysis
+- Detection rule development and validation
+- Evidence-based troubleshooting and documentation
+
+---
+
 # Tools and Technologies
 
 - **OpenCTI**
@@ -404,5 +422,9 @@ The project was created as an educational SOC lab and is not intended to represe
 **Makinde Boluwatife**
 
 SOC Analyst Trainee
+
+**Project:** Threat Intelligence Integration with OpenCTI
+
+**Status:** Completed with a documented live IOC-alerting limitation.
 
 GitHub: [CyberTife](https://github.com/CyberTife)
