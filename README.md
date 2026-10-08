@@ -49,11 +49,11 @@ It provided a place to work with:
 
 ### Evidence
 
-![OpenCTI Dashboard](phase-1-opencti/opencti-dashboard.png)
+![OpenCTI Dashboard](opencti/opencti-dashboard.png)
 
 **Figure 2 —** OpenCTI dashboard showing the platform populated with threat-intelligence data.
 
-> **Upload:** `phase-1-opencti/opencti-dashboard.png`
+> **Upload:** `opencti/opencti-dashboard.png`
 
 I used OpenCTI as the central platform for collecting and managing threat intelligence.
 
@@ -78,7 +78,7 @@ At the time of the project screenshots, OpenCTI contained a populated set of thr
 
 ### Evidence
 
-![OpenCTI Feed Integrations](phase-2-threat-intelligence/opencti-feed-integrations.png)
+![OpenCTI Feed Integrations](threat-intelligence/opencti-feed-integrations.png)
 
 *OpenCTI integrations showing the connected threat-intelligence sources and MITRE ATT&CK.*
 
@@ -105,7 +105,7 @@ The indicator was used to demonstrate the OpenCTI enrichment workflow.
 
 ### Evidence
 
-![Indicator Analysis](phase-2-threat-intelligence/opencti-indicator-156-229-165-166.png)
+![Indicator Analysis](threat-intelligence/opencti-indicator-156-229-165-166.png)
 
 *OpenCTI indicator analysis for 156.229.165.166 showing its source, confidence score, TLP marking, and associated labels.*
 
@@ -147,7 +147,7 @@ The enrichment script successfully queried OpenCTI for `156.229.165.166`, found 
 
 ### Evidence
 
-The enrichment result is documented in the project report. The OpenCTI indicator used for the controlled test is shown in the [indicator analysis evidence](../phase-2-threat-intelligence/opencti-indicator-156-229-165-166.png).
+The enrichment result is documented in the project report. The OpenCTI indicator used for the controlled test is shown in the [indicator analysis evidence](../threat-intelligence/opencti-indicator-156-229-165-166.png).
 
 *Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log.*
 
@@ -181,11 +181,11 @@ The rule generated a **Level 8** alert during controlled testing.
 
 ### Evidence
 
-![Baseline Rule 100400](phase-4-detection-engineering/baseline-rule-100400-dashboard.png)
+![Baseline Rule 100400](detection-engineering/baseline-rule-100400-dashboard.png)
 
 *Baseline Wazuh detection: Rule 100400 generated a Level 8 alert for scheduled-task creation.*
 
-![Baseline Rule 100400 Event](phase-4-detection-engineering/baseline-rule-100400-event.png)
+![Baseline Rule 100400 Event](detection-engineering/baseline-rule-100400-event.png)
 
 *Event view showing the baseline Rule 100400 alert.*
 
@@ -218,11 +218,11 @@ The original Sysmon event already contained the parent-process information. The 
 
 ### Evidence
 
-![Improved Rule 100600](phase-4-detection-engineering/improved-rule-100600-dashboard.png)
+![Improved Rule 100600](detection-engineering/improved-rule-100600-dashboard.png)
 
 *Improved Wazuh detection: Rule 100600 generated a Level 12 alert with PowerShell parent-process context.*
 
-![Improved Rule 100600 Event](phase-4-detection-engineering/improved-rule-100600-event.png)
+![Improved Rule 100600 Event](detection-engineering/improved-rule-100600-event.png)
 
 *Event view showing the improved Rule 100600 alert.*
 
@@ -240,7 +240,7 @@ The original Sysmon event already contained the parent-process information. The 
 
 ### Evidence
 
-![Before and After Detection](phase-4-detection-engineering/before-after-detection.png)
+![Before and After Detection](detection-engineering/before-after-detection.png)
 
 *Side-by-side comparison of the baseline and improved Wazuh detections.*
 
@@ -330,10 +330,10 @@ Store project evidence in the phase folders:
 
 ```
 architecture/
-phase-1-opencti/
-phase-2-threat-intelligence/
-phase-3-enrichment/
-phase-4-detection-engineering/
+opencti/
+threat-intelligence/
+enrichment/
+detection-engineering/
 ```
 
 ---
@@ -350,17 +350,17 @@ opencti-threat-intelligence-capstone-/
 ├── architecture/
 │   └── capstone-lab-architecture.png
 │
-├── phase-1-opencti/
+├── opencti/
 │   └── opencti-dashboard.png
 │
-├── phase-2-threat-intelligence/
+├── threat-intelligence/
 │   ├── opencti-feed-integrations.png
 │   └── opencti-indicator-156-229-165-166.png
 │
-├── phase-3-enrichment/
+├── enrichment/
 │   └── (enrichment result documented in report)
 │
-├── phase-4-detection-engineering/
+├── detection-engineering/
 │   ├── baseline-rule-100400-dashboard.png
 │   ├── baseline-rule-100400-event.png
 │   ├── improved-rule-100600-dashboard.png
