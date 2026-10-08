@@ -21,7 +21,9 @@ The overall workflow was:
 
 ![Lab Architecture](architecture/capstone-lab-architecture.png)
 
-> **Add the architecture diagram here:** `architecture/capstone-lab-architecture.png`
+**Figure 1 —** Lab architecture showing the Windows endpoint, Sysmon, Wazuh, OpenCTI, CTI enrichment, and SOC analyst workflow.
+
+
 
 ## Objectives
 
@@ -47,10 +49,13 @@ It provided a place to work with:
 
 ### Evidence
 
-Add these screenshots:
+![OpenCTI Dashboard](phase-1-opencti/opencti-dashboard.png)
 
-- `phase-1-opencti/opencti-dashboard.png`
-- `phase-1-opencti/opencti-integrations.png`
+**Figure 2 —** OpenCTI dashboard showing the platform populated with threat-intelligence data.
+
+> **Upload:** `phase-1-opencti/opencti-dashboard.png`
+
+I used OpenCTI as the central platform for collecting and managing threat intelligence.
 
 ## Result
 
@@ -319,6 +324,8 @@ Add the final PowerPoint here:
 
 ## Screenshots
 
+The repository is organised so each screenshot has a clear purpose. Use the exact filenames below when uploading the prepared images.
+
 Store project evidence in the phase folders:
 
 ```
@@ -354,9 +361,11 @@ opencti-threat-intelligence-capstone-/
 │   └── (enrichment result documented in report)
 │
 ├── phase-4-detection-engineering/
-│   ├── baseline-rule-100400.png
-│   ├── improved-rule-100600.png
-│   └── before-after.png
+│   ├── baseline-rule-100400-dashboard.png
+│   ├── baseline-rule-100400-event.png
+│   ├── improved-rule-100600-dashboard.png
+│   ├── improved-rule-100600-event.png
+│   └── before-after-detection.png
 │
 ├── report/
 │   └── Threat_Intelligence_Integration_OpenCTI_Report.pdf
