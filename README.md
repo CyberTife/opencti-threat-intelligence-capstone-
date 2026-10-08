@@ -73,10 +73,9 @@ At the time of the project screenshots, OpenCTI contained a populated set of thr
 
 ### Evidence
 
-Add:
+![OpenCTI Feed Integrations](phase-2-threat-intelligence/opencti-feed-integrations.png)
 
-- `phase-2-threat-intelligence/feed-integrations.png`
-- `phase-2-threat-intelligence/opencti-dashboard.png`
+*OpenCTI integrations showing the connected threat-intelligence sources and MITRE ATT&CK.*
 
 ---
 
@@ -101,9 +100,9 @@ The indicator was used to demonstrate the OpenCTI enrichment workflow.
 
 ### Evidence
 
-Add:
+![Indicator Analysis](phase-2-threat-intelligence/opencti-indicator-156-229-165-166.png)
 
-`phase-2-threat-intelligence/indicator-156-229-165-166.png`
+*OpenCTI indicator analysis for 156.229.165.166 showing its source, confidence score, TLP marking, and associated labels.*
 
 ---
 
@@ -143,10 +142,9 @@ The enrichment script successfully queried OpenCTI for `156.229.165.166`, found 
 
 ### Evidence
 
-Add:
+The enrichment result is documented in the project report. The OpenCTI indicator used for the controlled test is shown in the [indicator analysis evidence](../phase-2-threat-intelligence/opencti-indicator-156-229-165-166.png).
 
-- `phase-3-enrichment/enrichment-workflow.png`
-- `phase-3-enrichment/enrichment-result.png`
+*Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log.*
 
 ## Important Limitation
 
@@ -178,9 +176,13 @@ The rule generated a **Level 8** alert during controlled testing.
 
 ### Evidence
 
-Add:
+![Baseline Rule 100400](phase-4-detection-engineering/baseline-rule-100400-dashboard.png)
 
-`phase-4-detection-engineering/baseline-rule-100400.png`
+*Baseline Wazuh detection: Rule 100400 generated a Level 8 alert for scheduled-task creation.*
+
+![Baseline Rule 100400 Event](phase-4-detection-engineering/baseline-rule-100400-event.png)
+
+*Event view showing the baseline Rule 100400 alert.*
 
 ---
 
@@ -211,9 +213,13 @@ The original Sysmon event already contained the parent-process information. The 
 
 ### Evidence
 
-Add:
+![Improved Rule 100600](phase-4-detection-engineering/improved-rule-100600-dashboard.png)
 
-`phase-4-detection-engineering/improved-rule-100600.png`
+*Improved Wazuh detection: Rule 100600 generated a Level 12 alert with PowerShell parent-process context.*
+
+![Improved Rule 100600 Event](phase-4-detection-engineering/improved-rule-100600-event.png)
+
+*Event view showing the improved Rule 100600 alert.*
 
 ---
 
@@ -229,9 +235,9 @@ Add:
 
 ### Evidence
 
-Add:
+![Before and After Detection](phase-4-detection-engineering/before-after-detection.png)
 
-`phase-4-detection-engineering/before-after.png`
+*Side-by-side comparison of the baseline and improved Wazuh detections.*
 
 > **The main improvement was adding process context rather than treating every scheduled-task creation as equally suspicious.**
 
@@ -338,17 +344,14 @@ opencti-threat-intelligence-capstone-/
 │   └── capstone-lab-architecture.png
 │
 ├── phase-1-opencti/
-│   ├── opencti-dashboard.png
-│   └── opencti-integrations.png
+│   └── opencti-dashboard.png
 │
 ├── phase-2-threat-intelligence/
-│   ├── feed-integrations.png
-│   ├── opencti-dashboard.png
-│   └── indicator-156-229-165-166.png
+│   ├── opencti-feed-integrations.png
+│   └── opencti-indicator-156-229-165-166.png
 │
 ├── phase-3-enrichment/
-│   ├── enrichment-workflow.png
-│   └── enrichment-result.png
+│   └── (enrichment result documented in report)
 │
 ├── phase-4-detection-engineering/
 │   ├── baseline-rule-100400.png
