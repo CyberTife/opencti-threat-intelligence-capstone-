@@ -149,14 +149,13 @@ The enrichment script successfully queried OpenCTI for `156.229.165.166`, found 
 
 ### Evidence
 
-Upload the enrichment evidence to the `enrichment/` folder:
+![CDB and Wazuh Configuration](enrichment/cdb-list-and-wazuh-config.png)
 
-- `enrichment-workflow.png` — workflow showing the controlled OpenCTI → Wazuh enrichment process.
-- `enrichment-result.png` — result showing the returned threat-intelligence context.
+**Figure 5 —** Wazuh CDB list and configuration used for the OpenCTI indicator-matching path.
 
-The indicator used for the controlled test is shown in the [indicator analysis evidence](threat-intelligence/opencti-indicator-156-229-165-166.png).
+The indicator used for the controlled enrichment test is shown in the [indicator analysis evidence](threat-intelligence/opencti-indicator-156-229-165-166.png).
 
-*Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log.*
+*Controlled OpenCTI → Wazuh enrichment test: the script queried OpenCTI for 156.229.165.166 and wrote the returned context to the enrichment log. The detailed output is also documented in the final report.*
 
 ## Important Limitation
 
